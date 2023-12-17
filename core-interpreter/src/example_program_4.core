@@ -1,0 +1,27 @@
+program
+  int X,Y, XY, A,AA,AAA;
+  int L,B,C;
+  int E,CC,CCC1;
+  int Q;
+begin 
+  read X,Y,Q,L,B, XY;
+
+write X, L, Y; 
+  if [(X==L) || [[((Q*3*B)!=8)||(E>=CC)]||[(38==3) && ((L*A*30+C-3)<(8*XY-B*CC+20))]]] then 
+    if (4 == 4) then
+      C = 4;
+    end;
+    B = 4 * C;
+  else
+    write X;
+    E = 13 - CC;
+if (4 > 2) then if (E == C) then AA = 4; else AA = 5; end; if (E == 30) then AA
+= 49; end; else XY = Y; end;
+  end; CC = 20; write Q, B; A = B; AAA = 10; E = AAA;
+while (CC >= Q) loop write Q, XY; CC = CC - 1; write CC; while !(B!=A) loop B = B - 1; if (E==AAA) then L = 34+L; if (B==C) then read Y,X,XY,A;write Y,X,XY,A;end;else L=L-L;end;Q=Q+1;end;B=B-1;end;       
+
+
+end
+
+
+
