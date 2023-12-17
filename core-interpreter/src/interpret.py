@@ -18,7 +18,7 @@ import argparse
 import bnf_grammar
 import core
 
-def main():
+def main() -> None:
     """Interpret a Core program.
 
     Retrieve the paths of a Core file and data file from command line 
