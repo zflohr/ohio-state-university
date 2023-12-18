@@ -9,11 +9,11 @@ Python, and it therefore runs on the Python interpreter.
 
 ## BNF Grammar for Core
 
-\<prog> ::= program \<decl seq> begin \<stmt seq> end
-\<decl seq> ::= \<decl> | \<decl> \<decl seq>
-\<stmt seq> ::= \<stmt> | \<stmt> \<stmt seq>
-\<decl> ::= int \<id list>;
-\<id list> ::= \<id> | \<id>, \<id list>
+\<prog> ::= program \<decl seq> begin \<stmt seq> end  
+\<decl seq> ::= \<decl> | \<decl> \<decl seq>  
+\<stmt seq> ::= \<stmt> | \<stmt> \<stmt seq>  
+\<decl> ::= int \<id list>;  
+\<id list> ::= \<id> | \<id>, \<id list>  
 
 ## Deterministic Finite Automaton (DFA)
 
