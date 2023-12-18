@@ -19,6 +19,11 @@ Python, and it therefore runs on the Python interpreter.
 \<if> ::= if \<cond> then \<stmt seq> end;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | if \<cond> then \<stmt seq> else \<stmt seq> end;  
+\<loop> ::= while \<cond> loop \<stmt seq> end;  
+\<in> ::= read \<id list>;  
+\<out> ::= write \<id list>;  
+\<cond> ::= \<comp> | !\<cond> | [\<cond> && \<cond>] | [\<cond> || \<cond>]  
+
 
 ## Deterministic Finite Automaton (DFA)
 
