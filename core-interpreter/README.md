@@ -2,10 +2,11 @@
 
 ## Description
 
-This repository contains an interpreter for the Core programming language - a
-simple, imperative, dynamically typed language created for the course CSE 5341
-"Principles of Programming Languages." The Core interpreter is written in
-Python, and it therefore runs on the Python interpreter.
+This is the top-level directory containing an interpreter for the Core 
+programming language - a simple, imperative, dynamically typed language 
+created for the course CSE 5341 "Principles of Programming Languages." The 
+Core interpreter is written in Python, and it therefore runs on the Python 
+interpreter.
 
 ## BNF Grammar for Core
 
