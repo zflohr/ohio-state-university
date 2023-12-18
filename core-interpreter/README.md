@@ -9,7 +9,7 @@ Python, and it therefore runs on the Python interpreter.
 
 ## BNF Grammar for Core
 
-<prog> ::= program <decl seq> begin <stmt seq> end
+\<prog> ::= program \<decl seq> begin \<stmt seq> end
 
 ## Deterministic Finite Automaton (DFA)
 
