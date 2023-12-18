@@ -17,7 +17,7 @@ Python, and it therefore runs on the Python interpreter.
 \<stmt> ::= \<assign> | \<if> | \<loop> | \<in> | \<out>  
 \<assign> ::= \<id> = \<exp>;  
 \<if> ::= if \<cond> then \<stmt seq> end;  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | if \<cond> then \<stmt seq> else \<stmt seq> end;  
 
 ## Deterministic Finite Automaton (DFA)
