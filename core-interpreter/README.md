@@ -6,7 +6,10 @@ This is a top-level directory containing an interpreter for the Core
 programming language - a simple, imperative, dynamically typed language 
 created for the course CSE 5341 "Principles of Programming Languages." The 
 Core interpreter is written in Python, and it therefore runs on the Python 
-interpreter.
+interpreter. The Core interpreter involves four stages: tokenization, parsing, 
+pretty-printing, and execution. During parsing, an abstract parse tree is
+created by a recursive descent process and is encapsulated in an instance of 
+the Prog class of the [bnf_grammar](src/bnf_grammar.py) module.
 
 ## BNF Grammar for Core
 
