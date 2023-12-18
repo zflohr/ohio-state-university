@@ -28,7 +28,8 @@ Python, and it therefore runs on the Python interpreter.
 \<fac> ::= \<op> | \<op> * \<fac>  
 \<op> ::= \<int> | \<id> | (\<exp>)  
 \<comp op> ::= != | == | < | > | <= | >=  
-\<id> ::= \[A-Z]([A-Z] | \d)\* (a regular expression in PCRE2 syntax)
+\<id> ::= \[A-Z]([A-Z] | \d)\* (a regular expression in PCRE2 syntax)  
+\<int> ::= \d+ (a regular expression in PCRE2 syntax)  
 
 ## Deterministic Finite Automaton (DFA)
 
