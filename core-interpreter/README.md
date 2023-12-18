@@ -1,3 +1,9 @@
+# Core Interpreter
+
+This repository contains an interpreter for the Core programming language - a
+simple, imperative, dynamically typed language created for the course CSE 5341
+"Principles of Programming Languages."
+
 ## Deterministic Finite Automaton (DFA)
 
 ![DFA key page 1](docs/diagrams/dfa_page_1.png)
