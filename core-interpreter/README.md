@@ -1,5 +1,7 @@
 # Core Interpreter
 
+## Description
+
 This repository contains an interpreter for the Core programming language - a
 simple, imperative, dynamically typed language created for the course CSE 5341
 "Principles of Programming Languages."
