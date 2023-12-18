@@ -401,7 +401,7 @@ class Id:
     """Encapsulation of the production for the <id> nonterminal.
 
     BNF grammar:
-        <id> ::= defined by regular expression in the token stream
+        <id> ::= [A-Z]([A-Z] | \d)* (a regular expression in PCRE2 syntax)
 
     Attributes:
         Public instance methods:
@@ -1657,7 +1657,7 @@ class Int:
     """Encapsulation of the production for the <int> nonterminal.
 
     BNF grammar:
-        <int> ::= defined by regular expression in the token stream
+        <int> ::= \d+ (a regular expression in PCRE2 syntax)
 
     Attributes:
         Public instance methods:
