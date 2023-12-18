@@ -23,7 +23,12 @@ Python, and it therefore runs on the Python interpreter.
 \<in> ::= read \<id list>;  
 \<out> ::= write \<id list>;  
 \<cond> ::= \<comp> | !\<cond> | [\<cond> && \<cond>] | [\<cond> || \<cond>]  
-
+\<comp> ::= (\<op> \<comp op> \<op>)  
+\<exp> ::= \<fac> | \<fac> + \<exp> | \<fac> - \<exp>  
+\<fac> ::= \<op> | \<op> * \<fac>  
+\<op> ::= \<int> | \<id> | (\<exp>)  
+\<comp op> ::= != | == | < | > | <= | >=  
+\<id> ::= \[A-Z]([A-Z] | \d)\* (a regular expression in PCRE2 syntax)
 
 ## Deterministic Finite Automaton (DFA)
 
