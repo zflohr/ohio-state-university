@@ -45,14 +45,14 @@ the Prog class of the [bnf_grammar](src/bnf_grammar.py) module.
 ### Integers:
 All unsigned integers are legal.  
 
-A regular expression in PCRE2 syntax: `\d+`
+A regular expression in PCRE2 syntax for a Core integer: `\d+`
 
 ### Identifiers:
 The first character must be a capital letter of the English alphabet. Any 
 number of decimal digits and/or capital letters may follow thereafter in any 
 order.  
 
-A regular expression in PCRE2 syntax: `[A-Z]([A-Z] | \d)*`
+A regular expression in PCRE2 syntax for a Core identifier: `[A-Z]([A-Z] | \d)*`
 
 ### White Space:
 White space is required between any pair of tokens unless one or both of them 
