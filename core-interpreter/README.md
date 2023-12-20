@@ -34,6 +34,31 @@ the Prog class of the [bnf_grammar](src/bnf_grammar.py) module.
 \<id> ::= \[A-Z]([A-Z] | \d)\* (a regular expression in PCRE2 syntax)  
 \<int> ::= \d+ (a regular expression in PCRE2 syntax)  
 
+## Tokens of Core
+
+### Reserved words:  
+`program, begin, end, int, if, then, else, while, loop, read, write`
+
+### Special Symbols:
+`; , = ! [ ] && || ( ) + - * != == < > <= >=`
+
+### Integers:
+All unsigned integers are legal.  
+
+A regular expression in PCRE2 syntax: `\d+`
+
+### Identifiers:
+The first character must be a capital letter of the English alphabet. Any 
+number of decimal digits and/or capital letters may follow thereafter in any 
+order.  
+
+A regular expression in PCRE2 syntax: `[A-Z]([A-Z] | \d)*`
+
+### White Space:
+White space is required between any pair of tokens unless one or both of them 
+are special symbols, in which case white space is optional. White space is not 
+a regular token.
+
 ## Deterministic Finite Automaton (DFA)
 
 ![DFA key page 1](docs/diagrams/dfa_page_1.png)
