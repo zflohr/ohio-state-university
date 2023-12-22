@@ -33,7 +33,7 @@ Example programs and data can be found [here](example-input). To run the first
 example program with example data as input, run the following command from
 the src/ directory:  
 
-          python3 interpret.py ../example-input/program_1.core ../example-input/data.txt
+    python3 interpret.py ../example-input/program_1.core ../example-input/data.txt
 
 ## BNF Grammar for Core
 
