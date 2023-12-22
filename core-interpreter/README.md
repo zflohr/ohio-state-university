@@ -11,6 +11,23 @@ pretty-printing, and execution. During parsing, an abstract parse tree is
 created by a recursive descent process and is encapsulated in an instance of 
 the Prog class of the [bnf_grammar](src/bnf_grammar.py) module.
 
+## Instructions
+
+Requires Python 3.10 or higher.  
+
+Keep all [source files](src) in the same directory.
+
+The [script](src/interpret.py) must be executed from the command line. It
+requires the following positional arguments:
+  1. *program* - The path of the file containing the Core program to be
+                 interpreted.
+  2. *data* - The path of the file containing input data for `read` statements 
+              in the Core program. This file must contain only integers, and 
+              each integer must be on a separate line. This file must not
+              contain empty lines. If the Core interpreter executes a `read` 
+              statement, it will consume as many integers from the data file as
+              there are identifiers in the `read` statement.
+
 ## BNF Grammar for Core
 
 \<prog> ::= program \<decl seq> begin \<stmt seq> end  
