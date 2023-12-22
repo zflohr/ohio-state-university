@@ -7,9 +7,10 @@ programming language - a simple, imperative, dynamically typed language
 created for the course CSE 5341 "Principles of Programming Languages." The 
 Core interpreter is written in Python, and it therefore runs on the Python 
 interpreter. The Core interpreter involves four stages: tokenization, parsing, 
-pretty-printing, and execution. During parsing, an abstract parse tree is
+printing, and execution. During parsing, an abstract parse tree is
 created by a recursive descent process and is encapsulated in an instance of 
-the Prog class of the [bnf_grammar](src/bnf_grammar.py) module.
+the Prog class of the [bnf_grammar](src/bnf_grammar.py) module. During printing,
+the parsed Core program is pretty-printed to standard output.
 
 ## Instructions
 
@@ -26,7 +27,13 @@ requires the following positional arguments:
               each integer must be on a separate line. This file must not
               contain empty lines. If the Core interpreter executes a `read` 
               statement, it will consume as many integers from the data file as
-              there are identifiers in the `read` statement.
+              there are identifiers in the `read` statement.  
+
+Example programs and data can be found [here](example-input). To run the first
+example program with example data as input, run the following command from
+the src/ directory:  
+
+          python3 interpret.py ../example-input/program_1.core ../example-input/data.txt
 
 ## BNF Grammar for Core
 
