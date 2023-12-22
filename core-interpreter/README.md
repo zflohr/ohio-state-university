@@ -29,7 +29,7 @@ requires the following positional arguments:
               statement, it will consume as many integers from the data file as
               there are identifiers in the `read` statement.  
 
-Example programs and data can be found [here](example-input). To run the first
+Example programs and data are located [here](example-input). To run the first
 example program with example data as input, run the following command from
 the src/ directory:  
 
