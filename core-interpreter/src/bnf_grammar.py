@@ -18,6 +18,7 @@ the parse tree to pretty-print and execute the Core program,
 respectively.
 """
 
+import sys
 from typing import NoReturn, TextIO
 
 import __main__
@@ -93,7 +94,7 @@ def context_free_error_checker(expected_token_number: int = 0,
                                  .format(__main__.tokenizer.get_file_name(),
                                          line_number, token_type, token))
         __main__.tokenizer.shutdown()
-        __main__.sys.exit(error_message)
+        sys.exit(error_message)
     else:
         if (expected_token_type 
                 in ['reserved word', 'special symbol', 'integer']):
@@ -124,16 +125,16 @@ def runtime_error(data: TextIO, error_cause: str, invalid_line: int | str = '',
     """
     data.close()
     if error_cause == 'input eof':
-        __main__.sys.exit("Runtime error! End of data file \"{0}\" has been "
+        sys.exit("Runtime error! End of data file \"{0}\" has been "
                               "reached!".format(data.name))
     if error_cause == 'input empty line':
-        __main__.sys.exit("Runtime error! Data file \"{0}\" cannot contain "
+        sys.exit("Runtime error! Data file \"{0}\" cannot contain "
                               "empty lines!".format(data.name))
     if error_cause == 'input invalid line':
-        __main__.sys.exit("Runtime error! Invalid line in data file \"{0}\":"
+        sys.exit("Runtime error! Invalid line in data file \"{0}\":"
                               " \"{1}\"".format(data.name, invalid_line[:-1]))
     if error_cause == 'uninitialized identifier':
-        __main__.sys.exit("Runtime error! File \"{0}\", line {1}: identifier"
+        sys.exit("Runtime error! File \"{0}\", line {1}: identifier"
                               " \"{2}\" has not been initialized!"
                               .format(__main__.tokenizer.get_file_name(),
                                       invalid_line, name))
@@ -532,7 +533,7 @@ class Id:
         else:
             adverb = 'not'
         __main__.tokenizer.shutdown()
-        __main__.sys.exit("Error! File \"{0}\", line {1}: identifier \"{2}\" "
+        sys.exit("Error! File \"{0}\", line {1}: identifier \"{2}\" "
                               "has {3} been declared!"
                               .format(__main__.tokenizer.get_file_name(),
                                       __main__.tokenizer.line_number,
