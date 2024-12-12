@@ -133,7 +133,7 @@ def get_comparative_figures(network: QueueNetwork,
 def main() -> None:
     """Get theoretical and simulated averages for a queueing network.
 
-    Provision worker processes for parallel programming, and get
+    Provision worker processes for parallel computing, and get
     statistics and figures for an open queueing network whose queues are
     treated as M/M/1 systems via the application of Kleinrock's
     Independence Approximation.
