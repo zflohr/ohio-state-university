@@ -4,6 +4,53 @@ from random import uniform
 import matplotlib.pyplot as plt
 
 class QueueNetwork:
+    """An open queueing network whose queues are approximated as M/M/1.
+
+    The network contains an entry node, parallel intermediate nodes, and
+    an exit node. Packets arrive at the entry node following a Poisson
+    process with an arrival rate of λ. Packet lengths are exponentially
+    distributed, i.e., packet service time is exponentially distributed.
+    At the output of the entry node, each packet is independently routed
+    with equal probability to one of n intermediate nodes. The arrival
+    rate at the input of each intermediate node is λ/n. Packets then
+    merge before entering the exit node. The merging produces a stream
+    of packets with arrival rate λ at the input of the exit node. The
+    packets are then transmitted over the exit node's server, after
+    which they exit the network. A packet is immediately served if it
+    finds an empty server. Propagation and processing delays are
+    negligible.
+
+    Public Attributes:
+        Instance Methods:
+            mm1_queue_theoretical_stats: Computes theoretical,
+                steady-state statistics for an M/M/1 queueing system.
+            mm1_queue_sim_stats: Computes steady-state statistics from
+                simulated packet transmissions for an M/M/1 queueing
+                system.
+            mm1_queue_comparative_stats: Computes absolute differences
+                between theoretical and simulated statistics for an
+                M/M/1 queueing system.
+            create_comparative_charts: Creates a figure showing
+                differences between theoretical and simulated
+                steady-state statistics for a subsystem for each number
+                of intermediate nodes in the network up to self.n, and
+                saves the figure to a PDF file.
+            create_quantitative_charts: Creates a figure containing
+                subplots showing theoretical and simulated queue
+                statistics, and saves the figure to a PDF file.
+
+        Instance Variables:
+            n: The maximum number of parallel intermediate nodes to
+                investigate in the network.
+            transmissions: The number of packet transmissions to
+                simulate throughout the queueing network.
+            arrival_rates: Arrival rates (in packets/s) to simulate at
+                the entry node to the network.
+            avg_packet_len: The average length of a packet (in bits) in
+                the network.
+            link_capacity: The rate (in bits/s) whereat data is
+                transmitted from the entry node to an intermediate node.
+    """
 
     def __init__(self, intermediate_nodes: int, packet_transmissions: int,
                  arrival_rates: tuple[int | float, ...],
