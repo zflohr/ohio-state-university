@@ -25,9 +25,17 @@ This was an assignment for the course ECE 6101 "Computer Communication Networks.
 
 See the [project assignment](docs/project.pdf) for more information.
 
-## Instructions
+## Requirements to run the [simulation script](simulation.py) or use the [Python module](network_statistics.py):
 
-Requires Python 3.10 or higher.
+- Python 3.10 or higher.
 
-Requires a Linux system with kernel release >= 2.6. (Run the command `uname -r`
-in a Linux terminal to get the kernel release.)
+- A Linux system with kernel release >= 2.6.
+  - (Run the command `uname -r` in a Linux terminal to get the kernel release.)
+
+## Instructions for running the [simulation script](simulation.py):
+1. Create a virtual environment, and activate it. Refer to
+   https://docs.python.org/3.10/library/venv.html for instructions on how to do
+this.
+2. Install Matplotlib into the virtual environment: `pip install
+matplotlib==3.9.2`
+3. Run the script from the virtual environment: `python path/to/simulation.py`
