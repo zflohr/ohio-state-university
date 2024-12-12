@@ -16,3 +16,5 @@ This was an assignment for the course ECE 6101 "Computer Communication Networks.
 
 ## Queuing Model
 ![Queuing model](docs/images/queuing_model.png)
+
+See the [project assignment](docs/project.pdf) for more information.
