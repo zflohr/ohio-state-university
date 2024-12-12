@@ -25,6 +25,10 @@ This was an assignment for the course ECE 6101 "Computer Communication Networks.
 
 See the [project assignment](docs/project.pdf) for more information.
 
+## Example output of [simulation script](simulation.py):
+![Comparative charts](docs/images/comparative_charts_subsystem_1.png)
+![Quantitative charts](docs/images/quantitative_charts_1.png)
+
 ## Requirements to run the [simulation script](simulation.py) or use the [Python module](network_statistics.py):
 
 - Python 3.10 or higher.
