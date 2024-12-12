@@ -12,9 +12,22 @@ and number of parallel intermediate nodes in the network. The class also uses
 [Matplotlib](https://matplotlib.org) to create comparative and quantitative
 plots of steady-state statistics versus arrival rate.
 
+The [simulation script](simulation.py) uses the Python [multiprocessing
+module](https://docs.python.org/3.10/library/multiprocessing.html) to perform
+process-based parallelism, during which worker processes parallelize the
+execution of computationally intensive class methods across multiple input
+values. This allows for leveraging multiple processors on a given machine.
+
 This was an assignment for the course ECE 6101 "Computer Communication Networks."
 
 ## Queuing Model
 ![Queuing model](docs/images/queuing_model.png)
 
 See the [project assignment](docs/project.pdf) for more information.
+
+## Instructions
+
+Requires Python 3.10 or higher.
+
+Requires a Linux system with kernel release >= 2.6. (Run the command `uname -r`
+in a Linux terminal to get the kernel release.)
