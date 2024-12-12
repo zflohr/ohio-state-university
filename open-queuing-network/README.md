@@ -12,7 +12,7 @@ and number of parallel intermediate nodes in the network. The class also uses
 [Matplotlib](https://matplotlib.org) to create comparative and quantitative
 plots of steady-state statistics versus arrival rate.
 
-This was an assignment for the course CSE 6101 "Computer Communication Networks."
+This was an assignment for the course ECE 6101 "Computer Communication Networks."
 
 ## Queuing Model
 ![Queuing model](docs/images/queuing_model.png)
