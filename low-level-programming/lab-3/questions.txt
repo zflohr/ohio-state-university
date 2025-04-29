@@ -1,0 +1,39 @@
+Zachary Flohr (flohr.20)
+ECE 5042, Lab 3
+
+Lab 3a question:
+
+If the arguments of swap are not pointers, then the values of the command line arguments will simply be copied; 
+the copies will then be passed into the swap() function. The values that reside at the memory addresses of the 
+command line arguments will not change, so only the copies will be printed. When the arguments of swap are pointers, 
+then the values that reside at the memory addresses of the command line arguments swap addresses during execution 
+of the swap() function. 
+
+
+Lab 3b question:
+
+An error will occur during compilation because a static array is a constant address; the address cannot be changed 
+to another address. 
+
+
+Lab 3d question:
+
+Since dynamic arrays are variables, array = array2 is allowable. The value of the array on the right side of the 
+assignment operator will get assigned to the array on the left side, so the array on the left side will contain 
+all the elements of the array on the right side. The array on the left side of the assignment operator will be 
+the same size as that of the array on the right side. 
+
+
+Lab 3f question:
+
+Each of those values is the memory address of the first element of a row. The addresses are stored as constants in 
+the array at compilation and cannot be changed. They are retrieved by simple indexing. Since all elements are 
+allocated continuously in memory in a static array, the value of array[1] for an array of type int will be the 
+value of array[0] plus four times the number of columns in the array.
+
+
+Lab 3g question:
+
+In a dynamic multidimensional array, every element in a given row is allocated continuously in memory; however, the 
+last element of a row and the first element of the next row may not be in adjacent memory addresses. The compiler 
+requires additional space to store a[0], a[1], a[2], etc. since they are variables.
