@@ -15,4 +15,4 @@ on separate lines to stdout. The important functions involved are `printf()`,
 return values of `getchar()` after executing the lines.
 [gdb_screenshot_1.png](gdb_screenshot_1.png),
 [gdb_screenshot_2.png](gdb_screenshot_2.png), and
-[gdb_screenshot_3.png](gdb_screenshot_3.png) show my use of `gdb`.
+[gdb_screenshot_3.png](gdb_screenshot_3.png) show my use of the GNU debugger.
