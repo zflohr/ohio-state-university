@@ -11,8 +11,8 @@ program to stdout, to read characters from stdin, and to print the characters
 on separate lines to stdout. The important functions involved are `printf()`,
 `getchar()`, and `putchar()`.
 
-`gdb` was used to set breakpoints at lines
-containing `getchar()` and to inspect return values of `getchar()` after
-executing the lines. [gdb_screenshot_1.png](gdb_screenshot_1.png),
+`gdb` was used to set breakpoints at lines containing `getchar()` and to inspect
+return values of `getchar()` after executing the lines.
+[gdb_screenshot_1.png](gdb_screenshot_1.png),
 [gdb_screenshot_2.png](gdb_screenshot_2.png), and
 [gdb_screenshot_3.png](gdb_screenshot_3.png) show my use of `gdb`.
