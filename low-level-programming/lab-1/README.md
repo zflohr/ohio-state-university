@@ -1,4 +1,4 @@
-# Lab 1: GCC, GDB, Make, stdio.h
+# Lab 1: Introduction to GCC, GDB, Make, and stdio.h
 
 The purpose of this lab was to become familiar with the GNU project C and C++
 compiler (GCC), the GNU debugger (GDB), GNU Make, and makefiles.
