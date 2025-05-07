@@ -16,3 +16,6 @@ return values of `getchar()` after executing the lines.
 [gdb_screenshot_1.png](gdb_screenshot_1.png),
 [gdb_screenshot_2.png](gdb_screenshot_2.png), and
 [gdb_screenshot_3.png](gdb_screenshot_3.png) show my use of the GNU debugger.
+The [makefile](Makefile) contains rules for recompiling the C source files and
+relinking object files to update the executable file when the C source files
+change.
